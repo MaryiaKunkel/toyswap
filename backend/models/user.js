@@ -28,7 +28,7 @@ class User {
                   password,
                   first_name AS "firstName",
                   last_name AS "lastName",
-                  email,
+                  email
            FROM users
            WHERE username = $1`,
       [username]
@@ -76,7 +76,7 @@ class User {
             first_name,
             last_name,
             email)
-           VALUES ($1, $2, $3, $4, $5, $6)
+           VALUES ($1, $2, $3, $4, $5)
            RETURNING username, first_name AS "firstName", last_name AS "lastName", email`,
       [username, hashedPassword, firstName, lastName, email]
     );
@@ -107,7 +107,7 @@ class User {
   /** Given a username, return data about user.
    *
    * Returns { username, first_name, last_name, listings }
-   *   where listings is { id, title, description, price, image_url, available }
+   *   where listings is { id, title, description,  image_url, available }
    *
    * Throws NotFoundError if user not found.
    **/
@@ -115,9 +115,9 @@ class User {
   static async get(username) {
     const userRes = await db.query(
       `SELECT username,
-                  first_name AS "firstName",
-                  last_name AS "lastName",
-                  email
+              first_name AS "firstName",
+              last_name AS "lastName",
+              email
            FROM users
            WHERE username = $1`,
       [username]
@@ -128,13 +128,23 @@ class User {
     if (!user) throw new NotFoundError(`No user: ${username}`);
 
     const userListingsRes = await db.query(
-      `SELECT listing.id
+      `SELECT *
           FROM listing
            WHERE listing.shared_by_username = $1`,
       [username]
     );
 
-    user.listings = userListingsRes.rows.map((listing) => listing.id);
+    user.listings = userListingsRes.rows;
+
+    const userLikedListings = await db.query(
+      `SELECT *
+          FROM liked_listing
+           WHERE liked_listing.username = $1`,
+      [username]
+    );
+
+    user.liked_listings = userLikedListings.rows;
+
     return user;
   }
 

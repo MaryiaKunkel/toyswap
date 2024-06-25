@@ -1,6 +1,6 @@
 "use strict";
 
-/** Routes for listings. */
+/** Routes for reviews. */
 
 const jsonschema = require("jsonschema");
 
@@ -11,63 +11,45 @@ const {
   ensureCorrectUser,
   authenticateJWT,
 } = require("../middleware/auth");
-const Listing = require("../models/listing");
-const listingNewSchema = require("../schemas/listingNew.json");
-const listingUpdateSchema = require("../schemas/listingUpdate.json");
-const listingSearchSchema = require("../schemas/listingSearch.json");
+const Review = require("../models/review");
 
 const router = express.Router({ mergeParams: true });
 
-/** POST / { listing } => { listing }
+/** POST / { review } => { review }
  *
- * listing should be { title, description, image_url, available, state, city }
+ * review should be { reviewer_username, reviewed_username,review_text, review_date}
  *
- * Returns { id, title, description, image_url, available, shared_by_username, state, city }
+ * Returns { id, reviewer_username, reviewed_username, review_text, review_date }
  *
  * Authorization required: log in
  */
 
-router.post("/", async function (req, res, next) {
+router.post("/new", async function (req, res, next) {
   try {
-    const validator = jsonschema.validate(req.body, listingNewSchema);
-    if (!validator.valid) {
-      const errs = validator.errors.map((e) => e.stack);
-      throw new BadRequestError(errs);
-    }
-    const shared_by_username = res.locals.user.username;
-    const listingData = { ...req.body, shared_by_username };
-    const listing = await Listing.create(listingData);
-    return res.status(201).json({ listing });
+    //   const validator = jsonschema.validate(req.body, reviewNewSchema);
+    //   if (!validator.valid) {
+    //     const errs = validator.errors.map((e) => e.stack);
+    //     throw new BadRequestError(errs);
+    //   }
+    const reviewer_username = res.locals.user.username;
+    const reviewData = { ...req.body, reviewer_username };
+    const review = await Review.create(reviewData);
+    return res.status(201).json({ review });
   } catch (err) {
     return next(err);
   }
 });
 
 /** GET / =>
- *   { listings: [ { id, title, description,  image_url, available, shared_by_username }, ...] }
+ *   { reviews: [ { id, reviewer_username, reviewed_username, review_text, review_date}, ...] }
  *
- * Can provide search filter in query:
- * - address
- * - title (will find case-insensitive, partial matches)
-
- * Authorization required: none
+ * Authorization required: lig in
  */
 
-router.get("/", async function (req, res, next) {
-  const q = req.query;
-  // arrive as strings from querystring, but we want as int/bool
-  // if (q.minSalary !== undefined) q.minSalary = +q.minSalary;
-  // q.hasEquity = q.hasEquity === "true";
-
+router.get("/users/:username", async function (req, res, next) {
   try {
-    const validator = jsonschema.validate(q, listingSearchSchema);
-    if (!validator.valid) {
-      const errs = validator.errors.map((e) => e.stack);
-      throw new BadRequestError(errs);
-    }
-
-    const listings = await Listing.findAll();
-    return res.json({ listings });
+    const reviews = await Review.findAll();
+    return res.json({ reviews });
   } catch (err) {
     return next(err);
   }

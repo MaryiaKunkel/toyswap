@@ -12,6 +12,16 @@ const userAuthSchema = require("../schemas/userAuth.json");
 const userRegisterSchema = require("../schemas/userRegister.json");
 const { BadRequestError } = require("../expressError");
 
+router.get("/me", async (req, res, next) => {
+  try {
+    const user = await User.get(req.user.username);
+
+    return res.json({ user });
+  } catch (err) {
+    return next(err);
+  }
+});
+
 /** POST /auth/token:  { username, password } => { token }
  *
  * Returns JWT token which can be used to authenticate further requests.

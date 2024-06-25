@@ -23,24 +23,24 @@ VALUES ('Wisconsin',
         ('Wisconsin',
         'Waukesha');
 
-INSERT INTO listing (title, description, price, image_url, available, shared_by_username, address_id)
+INSERT INTO listing (title, description, image_url, available, shared_by_username, address_id)
 VALUES ('Toy Car', 'A small toy car', 
-        10, 
-        'http://example.com/toycar.jpg', 
+        
+        'https://t4.ftcdn.net/jpg/02/35/70/21/360_F_235702111_KkocG4AsR4dHy97wo8eQscrn4bKOXT4i.jpg', 
         TRUE, 
         'john_doe',
         1),
         ('Teddy Bear', 
         'A soft teddy bear', 
-        15, 
-        'http://example.com/teddybear.jpg', 
+        
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhBcblX20dugxRRgB8TZwt57a8VseIdBkE3w&s', 
         TRUE, 
         'jane_smith',
         2),
         ('Lego Set', 
         'A set of Lego bricks', 
-        25, 
-        'http://example.com/legoset.jpg', 
+        
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Irht59o5nS8MKMVngzsIeA_8saWe9Yvstw&s', 
         TRUE, 
         'alice_johnson',
         3);
@@ -56,8 +56,8 @@ VALUES (1, 'john_doe', 'jane_smith', '2023-01-10'),
         (2, 'jane_smith', 'alice_johnson', '2023-01-11'),
         (3, 'alice_johnson', 'john_doe', '2023-01-12');
 
-INSERT INTO review (reviewer_username, toy_exchange_id, review_text, review_date) 
-VALUES ('john_doe', 1, 'Great seller!', '2023-01-01'),
-        ('jane_smith', 2, 'Fast shipping!', '2023-01-02'),
-        ('alice_johnson', 3, 'Item as described.', '2023-01-03');
+INSERT INTO review (reviewer_username, reviewed_username, review_text, review_date) 
+VALUES ('john_doe', 'jane_smith', 'Great seller!', '2023-01-01'),
+        ('jane_smith', 'alice_johnson', 'Fast shipping!', '2023-01-02'),
+        ('alice_johnson', 'john_doe', 'Item as described.', '2023-01-03');
 

@@ -12,13 +12,20 @@
       "type": "string",
       "minLength": 1
     },
-    "price": {
-      "type": "integer",
-      "minimum": 0
-    },
     "image_url": {
       "type": "string",
       "format": "uri"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "state": {
+      "type": "string",
+      "minLength": 1
+    },
+    "city": {
+      "type": "string",
+      "minLength": 1
     }
   },
   "additionalProperties": false,

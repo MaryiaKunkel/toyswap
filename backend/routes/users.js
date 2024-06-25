@@ -17,7 +17,7 @@ const router = express.Router();
 /** GET /[username] => { user }
  *
  * Returns { username, first_name, last_name, listings }
- *   where listings is { id, title, description, price, image_url, available }
+ *   where listings is { id, title, description, image_url, available }
  *
  * Authorization required: same user-as-:username
  **/
@@ -26,6 +26,24 @@ router.get("/:username", async function (req, res, next) {
   try {
     const user = await User.get(req.params.username);
     return res.json({ user });
+  } catch (err) {
+    return next(err);
+  }
+});
+
+/** GET /{ users }
+ *
+ * Returns [{ username, first_name, last_name, listings }, ...]
+ *   where listings is { id, title, description, image_url, available }
+ *
+ * Authorization required: same user-as-:username
+ **/
+
+router.get("/", async function (req, res, next) {
+  try {
+    const users = await User.findAll();
+    console.log(users);
+    return res.json({ users });
   } catch (err) {
     return next(err);
   }
