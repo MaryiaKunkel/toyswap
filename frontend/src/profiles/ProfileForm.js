@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import Alert from "../common/Alert";
 import ToyswapApi from "../api/api";
 import UserContext from "../auth/UserContext";
+import "./ProfileForm.css";
 
 // eslint-disable-next-line
 import useTimedMessage from "../hooks/useTimedMessage";
@@ -95,7 +96,7 @@ function ProfileForm() {
   }
 
   return (
-    <div className="col-md-6 col-lg-4 offset-md-3 offset-lg-4">
+    <div className="ProfileForm">
       <h3>Profile</h3>
       <div className="card">
         <div className="card-body">

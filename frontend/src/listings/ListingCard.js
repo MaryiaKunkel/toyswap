@@ -80,22 +80,23 @@ function ListingCard({ id, title, description, image_url, type, onDelete }) {
   };
 
   return (
-    <div>
-      <Link className="ListingCard card" to={`/listings/${id}`}>
+    <div className="ListingCard">
+      <Link className="card" to={`/listings/${id}`}>
         <div className="card-body">
-          <h6 className="card-title">
-            {title}
-            {image_url && (
-              <img src={image_url} alt={title} className="float-right ml-5" />
-            )}
-          </h6>
+          <h3 className="card-title">{title}</h3>
+          {image_url && (
+            <div className="card-img-wrapper">
+              <img src={image_url} alt={title} className="card-img" />
+            </div>
+          )}
+
           <p>
-            <small>{description}</small>
+            <small className="card-description">{description}</small>
           </p>
         </div>
       </Link>
       {type !== "mine" ? (
-        <button onClick={handleFavoriteToggle}>
+        <button className="card-favor-button" onClick={handleFavoriteToggle}>
           {isLiked ? "Remove from favorites" : "Add to favorites"}
         </button>
       ) : null}
