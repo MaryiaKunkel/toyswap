@@ -70,7 +70,7 @@ The link to my project at Render.com: https://toyswap-frontend.onrender.com/
 
 ## About The Project
 
-[![Product Name Screen Shot](https://github.com/MaryiaKunkel/toyswap/toyswap_listings.png)](https://github.com/MaryiaKunkel/toyswap/toyswap_listings.png)
+[![Product Name Screen Shot](https://github.com/MaryiaKunkel/toyswap/blob/main/toyswap_listings.png)](https://github.com/MaryiaKunkel/toyswap/blob/main/toyswap_listings.png)
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
@@ -157,12 +157,12 @@ Frontend Setup
 
 ## Usage
 
-- [ ] Register or log in to your ToySwap account. ![signin_login](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_1.png) ![advanced_search_2](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_2.png)
-- [ ] Browse or search for toys available for swapping. ![advanced_search_result](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_result.png)
-- [ ] Post your own toys for exchange. ![favorites](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/favorites.png)
-- [ ] Engage in chats with other parents to negotiate swaps. ![history](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/history.png)
-- [ ] Save listings to favorite so you never lose them. ![prifile](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/prifile.png) ![profile_edit](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/profile_edit.png)
-- [ ] Leave reviews about your experiences with other parents. ![recipe_page_1](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/recipe_page_1.png) ![recipe_page_2](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/recipe_page_2.png)
+- [ ] Register or log in to your ToySwap account. ![signup](https://github.com/MaryiaKunkel/toyswap/blob/main/signup.png) ![login](https://github.com/MaryiaKunkel/toyswap/blob/main/login.png)
+- [ ] Browse or search for toys available for swapping. ![toyswap_listings](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/toyswap_listings.png)
+- [ ] Post your own toys for exchange. ![my_listings](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/my_listings.png) ![new_listing_form](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/new_listing_form.png)
+- [ ] Engage in chats with other parents to negotiate swaps. ![send_email_form](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/send_email_form.png) ![send_email_client](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/send_email_client.png)
+- [ ] Save listings to favorite so you never lose them. ![favorites](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/favorites.png)
+- [ ] Leave reviews about your experiences with other parents. ![review_form](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/review_form.png) ![reviews](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/reviews.png)
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 
