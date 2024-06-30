@@ -16,7 +16,7 @@ The link to my project at Render.com: https://toyswap-frontend.onrender.com/
 <br />
 <div align="center">
   <a href="https://github.com/MaryiaKunkel/nourish_pal/">
-    <img src="static/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="toyswap_listing.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">ToySwap</h3>
@@ -24,23 +24,14 @@ The link to my project at Render.com: https://toyswap-frontend.onrender.com/
   <p align="center">
     Toy Swap is a community-driven platform designed specifically for parents to exchange toys for their kids. Much like a Facebook Marketplace but tailored for toys, Toy Swap allows parents to easily give away toys their children no longer play with and find new ones at no cost. This promotes sustainability and provides an affordable way for families to refresh their children's toy collection.
 
-Key Features
-Toy Exchange: Parents can list toys they want to give away and browse toys that other parents have listed.
-Free Exchange: All toy exchanges are free, encouraging a community of sharing and sustainability.
-Reviews: Parents can leave reviews for other users, fostering a trustworthy and reliable community.
-Chat Functionality: Parents can chat with each other to arrange exchanges, discuss toy details, and build connections within the community.
+    Key Features:
+    - [ ] Toy Exchange: Parents can list toys they want to give away and browse toys that other parents have listed.
+    - [ ] Free Exchange: All toy exchanges are free, encouraging a community of sharing and sustainability.
+    - [ ] Reviews: Parents can leave reviews for other users, fostering a trustworthy and reliable community.
+    - [ ] Chat Functionality: Parents can chat with each other to arrange exchanges, discuss toy details, and build connections within the community.
 
-    <!-- <br /> -->
-    <!-- <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a> -->
-    <!-- <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a> -->
+</p>
 
-  </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -79,7 +70,7 @@ Chat Functionality: Parents can chat with each other to arrange exchanges, discu
 
 ## About The Project
 
-[![Product Name Screen Shot](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/home_page.png)](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/home_page.png)
+[![Product Name Screen Shot](https://github.com/MaryiaKunkel/toyswap/toyswap_listings.png)](https://github.com/MaryiaKunkel/toyswap/toyswap_listings.png)
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
@@ -166,12 +157,12 @@ Frontend Setup
 
 ## Usage
 
-- [ ] Use advanced search to find the recipe that meets your requirements. ![advanced_search_1](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_1.png) ![advanced_search_2](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_2.png)
-- [ ] Get the search results with the listed information which you required. ![advanced_search_result](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_result.png)
-- [ ] Save recipes you likes to Favorites. ![favorites](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/favorites.png)
-- [ ] See the resipes you visited in Hisroty. ![history](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/history.png)
-- [ ] Edit your profile. ![prifile](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/prifile.png) ![profile_edit](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/profile_edit.png)
-- [ ] See a detailed information about a recipe including diet, cooking time, meal type, etc, as well as trending recipes right now. ![recipe_page_1](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/recipe_page_1.png) ![recipe_page_2](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/recipe_page_2.png)
+- [ ] Register or log in to your ToySwap account. ![signin_login](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_1.png) ![advanced_search_2](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_2.png)
+- [ ] Browse or search for toys available for swapping. ![advanced_search_result](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/advanced_search_result.png)
+- [ ] Post your own toys for exchange. ![favorites](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/favorites.png)
+- [ ] Engage in chats with other parents to negotiate swaps. ![history](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/history.png)
+- [ ] Save listings to favorite so you never lose them. ![prifile](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/prifile.png) ![profile_edit](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/profile_edit.png)
+- [ ] Leave reviews about your experiences with other parents. ![recipe_page_1](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/recipe_page_1.png) ![recipe_page_2](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/recipe_page_2.png)
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 
@@ -181,10 +172,10 @@ Frontend Setup
 
 ### Prerequisites
 
-```bash
+<!-- ```bash
 # Install test dependencies (if not already installed)
 pip install -r requirements-test.txt
-```
+``` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ROADMAP -->
