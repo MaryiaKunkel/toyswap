@@ -51,11 +51,6 @@ INSERT INTO liked_listing (listing_id,username)
 VALUES (1,'alice_johnson'),
         (2, 'john_doe');
 
-INSERT INTO toy_exchange (listing_id, shared_by_username, shared_to_username, exchange_date) 
-VALUES (1, 'john_doe', 'jane_smith', '2023-01-10'),
-        (2, 'jane_smith', 'alice_johnson', '2023-01-11'),
-        (3, 'alice_johnson', 'john_doe', '2023-01-12');
-
 INSERT INTO review (reviewer_username, reviewed_username, review_text, review_date) 
 VALUES ('john_doe', 'jane_smith', 'Great seller!', '2023-01-01'),
         ('jane_smith', 'alice_johnson', 'Fast shipping!', '2023-01-02'),

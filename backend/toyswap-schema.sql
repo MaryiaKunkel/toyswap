@@ -33,18 +33,6 @@ CREATE TABLE liked_listing (
         REFERENCES users(username) ON DELETE CASCADE
 );
 
-
-CREATE TABLE toy_exchange (
-  id SERIAL PRIMARY KEY,
-  listing_id INTEGER NOT NULL
-    REFERENCES listing(id) ON DELETE CASCADE,
-  shared_by_username VARCHAR(25) NOT NULL
-    REFERENCES users(username) ON DELETE CASCADE,
-  shared_to_username VARCHAR(25) NOT NULL
-    REFERENCES users(username) ON DELETE CASCADE,
-  exchange_date DATE NOT NULL
-);
-
 CREATE TABLE review (
   id SERIAL PRIMARY KEY,
   reviewer_username VARCHAR(25) NOT NULL
