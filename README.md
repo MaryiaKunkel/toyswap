@@ -10,14 +10,15 @@
 -->
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
+<br/>
 The link to my project at Render.com: https://toyswap-frontend.onrender.com/
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/MaryiaKunkel/nourish_pal/">
+  <!-- <a href="https://github.com/MaryiaKunkel/nourish_pal/">
     <img src="toyswap_listing.jpg" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
 <h3 align="center">ToySwap</h3>
 
@@ -47,7 +48,7 @@ The link to my project at Render.com: https://toyswap-frontend.onrender.com/
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <!-- <li><a href="#prerequisites">Prerequisites</a></li> -->
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -168,7 +169,7 @@ Frontend Setup
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- ### Prerequisites -->
 
