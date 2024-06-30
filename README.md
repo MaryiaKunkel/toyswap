@@ -158,11 +158,11 @@ Frontend Setup
 ## Usage
 
 - [ ] Register or log in to your ToySwap account. ![signup](https://github.com/MaryiaKunkel/toyswap/blob/main/signup.png) ![login](https://github.com/MaryiaKunkel/toyswap/blob/main/login.png)
-- [ ] Browse or search for toys available for swapping. ![toyswap_listings](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/toyswap_listings.png)
-- [ ] Post your own toys for exchange. ![my_listings](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/my_listings.png) ![new_listing_form](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/new_listing_form.png)
-- [ ] Engage in chats with other parents to negotiate swaps. ![send_email_form](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/send_email_form.png) ![send_email_client](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/send_email_client.png)
-- [ ] Save listings to favorite so you never lose them. ![favorites](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/favorites.png)
-- [ ] Leave reviews about your experiences with other parents. ![review_form](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/review_form.png) ![reviews](https://github.com/MaryiaKunkel/nourish_pal/blob/nourishpal/static/reviews.png)
+- [ ] Browse or search for toys available for swapping. ![toyswap_listings](https://github.com/MaryiaKunkel/toyswap/blob/main/toyswap_listings.png)
+- [ ] Post your own toys for exchange. ![my_listings](https://github.com/MaryiaKunkel/toyswap/blob/main/my_listings.png) ![new_listing_form](https://github.com/MaryiaKunkel/toyswap/blob/main/new_listing_form.png)
+- [ ] Engage in chats with other parents to negotiate swaps. ![send_email_form](https://github.com/MaryiaKunkel/toyswap/blob/main/send_email_form.png) ![send_email_client](https://github.com/MaryiaKunkel/toyswap/blob/main/send_email_client.png)
+- [ ] Save listings to favorite so you never lose them. ![favorites](https://github.com/MaryiaKunkel/toyswap/blob/main/favorites.png)
+- [ ] Leave reviews about your experiences with other parents. ![review_form](https://github.com/MaryiaKunkel/toyswap/blob/main/review_form.png) ![reviews](https://github.com/MaryiaKunkel/toyswap/blob/main/reviews.png)
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 
@@ -170,7 +170,7 @@ Frontend Setup
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Prerequisites
+<!-- ### Prerequisites -->
 
 <!-- ```bash
 # Install test dependencies (if not already installed)
